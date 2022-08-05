@@ -26,7 +26,7 @@ function Header(props) {
                         <li><Link to="/about">Contact</Link></li>
                     </ul>
                     </div>
-                    <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+                    <a className="btn btn-ghost normal-case text-xl"><Link to="/">STRING LAB</Link></a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal p-0">
