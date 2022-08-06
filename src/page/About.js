@@ -1,10 +1,8 @@
 import React from 'react';
-import Header from '../component/Header';
 
 function About(props) {
     return (
         <div>
-            <Header/>
             <div className="hero min-h-screen bg-base-200">
                 <div className="hero-content text-center">
                     <div className="max-w-md">

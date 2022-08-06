@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 
 function Header(props) {
     return (
@@ -49,6 +49,9 @@ function Header(props) {
                     <a className="btn">Get started</a>
                 </div>
             </div>
+
+            
+            <Outlet/>
         </div>
     );
 }
