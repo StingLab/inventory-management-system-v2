@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function HomeLogin(props) {
     return (
@@ -27,7 +28,7 @@ function HomeLogin(props) {
                         </label>
                         </div>
                         <div class="form-control mt-6">
-                        <button class="btn btn-primary">Login</button>
+                        <button class="btn btn-primary"><Link to="/dashboard">Login</Link></button>
                         </div>
                     </div>
                     </div>
