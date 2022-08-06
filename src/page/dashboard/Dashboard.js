@@ -1,10 +1,8 @@
 import React from 'react';
-import Header2 from '../../component/Header2';
 
 function Dashboard(props) {
     return (
         <div>
-            <Header2/>
             <div className="hero min-h-screen bg-base-200">
                 <div className="hero-content text-center">
                     <div className="max-w-md">
