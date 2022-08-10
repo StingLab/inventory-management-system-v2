@@ -66,7 +66,9 @@ function HeaderAndSidebar(props) {
                         {
                             dashboardMenu.map(m =>
                                 <li key={m.id}>
-                                    <Link to="#" className='px-4 py-3 rounded-xl flex items-center space-x-4 text-black focus:bg-gradient-to-r from-sky-600 to-cyan-400 focus:text-white'>
+                                    <Link to="#" className='px-4 py-3 rounded-xl flex items-center space-x-4 text-black 
+                                    hover:bg-gradient-to-r from-sky-500 to-cyan-300 hover:text-white
+                                    focus:bg-gradient-to-r focus:text-white'>
                                         {m.icon}
                                         <span className="-mr-1 font-medium">{m.name}</span>
                                     </Link>
@@ -77,11 +79,11 @@ function HeaderAndSidebar(props) {
                 </div>
 
                 <div className="px-6 -mx-6 pt-4 flex justify-between items-center border-t">
-                    <button className="px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group">
+                    <button className="w-full px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 hover:bg-gradient-to-r from-sky-500 to-cyan-300 hover:text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
                         </svg>
-                        <span className="group-hover:text-gray-700"><Link to="/">Logout</Link></span>
+                        <span className=""><Link to="/">Logout</Link></span>
                     </button>
                 </div>
             </aside>
