@@ -68,7 +68,7 @@ function HeaderAndSidebar(props) {
                     {
                         dashboardMenu.map(m=>
                             <li key={m.id}>
-                                <Link to="#" aria-label="dashboard" className={selected ? selectedClass : nonSelectedClass} onClick={() => setSelected(!selected)}>
+                                <Link to="#" className={selected ? selectedClass : nonSelectedClass} onClick={() => setSelected(!selected)}>
                                     {m.icon}
                                     <span className="-mr-1 font-medium">{m.name}</span>
                                 </Link>
