@@ -7,4 +7,7 @@ module.exports = {
     extend: {},
   },
   plugins: [require("daisyui")],
+  variants: {
+    backgroundColor: ['responsive', 'hover', 'focus', 'active']
+  }
 }

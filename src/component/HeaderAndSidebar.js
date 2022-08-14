@@ -67,7 +67,7 @@ function HeaderAndSidebar(props) {
                             dashboardMenu.map(m =>
                                 <li key={m.id}>
                                     <Link to="#" className='px-4 py-3 flex items-center space-x-4 text-black hover:rounded-xl group
-                                    focus:bg-gradient-to-r from-sky-500 to-cyan-300 focus:text-white rounded-xl group'>
+                                        active:bg-gradient-to-r from-sky-500 to-cyan-300 active:text-white rounded-xl group'>
                                         {m.icon}
                                         <span className="-mr-1 font-medium">{m.name}</span>
                                     </Link>
