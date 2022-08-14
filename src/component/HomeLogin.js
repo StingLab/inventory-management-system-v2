@@ -24,12 +24,14 @@ function HomeLogin(props) {
                         </label>
                         <input type="text" placeholder="password" class="input input-bordered" />
                         <label class="label">
-                            <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                            <Link to="" class="label-text-alt link link-hover">Forgot password?</Link>
                         </label>
                         </div>
-                        <div class="form-control mt-6">
-                        <button class="btn btn-primary"><Link to="/dashboard">Login</Link></button>
-                        </div>
+                        <Link to="/dashboard">
+                            <div class="form-control mt-6">
+                                <button class="btn btn-primary">Login</button>
+                            </div>
+                        </Link>
                     </div>
                     </div>
                 </div>

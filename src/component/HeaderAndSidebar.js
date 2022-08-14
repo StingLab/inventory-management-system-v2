@@ -70,13 +70,15 @@ function HeaderAndSidebar(props) {
                     <ul className="space-y-2 tracking-wide mt-8">
                         {
                             dashboardMenu.map(m =>
-                                <li key={m.id} className={window.location.pathname == m.link? "bg-gradient-to-r from-sky-500 to-cyan-300 active:text-white rounded-xl group" : ""}>
-                                    <Link to="#" className='px-4 py-3 flex items-center space-x-4 text-black hover:rounded-xl group'
-                                        onClick={()=>{window.location.pathname = m.link;}}>
-                                        {m.icon}
-                                        <span className="-mr-1 font-medium">{m.name}</span>
-                                    </Link>
-                                </li>
+                                <Link to={m.link}>
+                                    <li key={m.id} className={window.location.pathname === m.link? "bg-gradient-to-r from-sky-500 to-cyan-300 active:text-white rounded-xl group" : ""}>
+                                        <div className='px-4 py-3 flex items-center space-x-4 text-black hover:rounded-xl group'
+                                            onClick={()=>{window.location.pathname = m.link;}}>
+                                            {m.icon}
+                                            <span className="-mr-1 font-medium">{m.name}</span>
+                                        </div>
+                                    </li>
+                                </Link>
                             )
                         }
                     </ul>
